@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="design.css">
+	<title>Calculator</title>
+</head>
+<body>
+<div class="min-h-screen bg-gradient-to-b from-gray-500 to-gray-700 flex items-center justify-center">
+	<!-- Form -->
+	<div class="bg-gray-800 border-2 border-gray-900 rounded-lg">
+		<form class="border-b-2 border-gray-900 h-30">
+			<div class="output text-right"></div>
+				<div class="preNum pt-5 pr-11 rounded-t-lg text-right text-gray-400 w-full"></div>
+				<div class="curNum pb-3 pr-11 rounded-t-lg text-right text-white text-9x1 w-full">0</div>
+			<!-- <input type="text" name="display" class="bg-transparent p-10 rounded-t-lg outline-none focus:bg-gray-700 text-3x1 text-right text-white w-full"> -->
+		</form>
+	<!-- Buttons -->
+		<div class="p-8 text-gray-800 grid grid-cols-4 gap-3 text-x1">
+			<button class="clear font-mono bg-gray-500 hover:bg-red-400 rounded-lg p-5 text-white">C</button>
+			<button class="operator font-mono bg-orange-400 hover:bg-orange-500 hover:text-white rounded-lg p-5">*</button>
+			<button class="operator font-mono bg-orange-400 hover:bg-orange-500 hover:text-white rounded-lg p-5">/</button>
+			<button class="delete font-mono bg-gray-500 hover:bg-red-400 rounded-lg p-5 text-white">Del</button>
+
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">7</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">8</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">9</button>
+			<button class="operator font-mono bg-orange-400 hover:bg-orange-500 hover:text-white rounded-lg p-5">-</button>
+
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">4</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">5</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">6</button>
+			<button class="operator font-mono bg-orange-400 hover:bg-orange-500 hover:text-white rounded-lg p-5">+</button>
+
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">1</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">2</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">3</button>
+			<button class="equal font-mono bg-blue-600 hover:bg-blue-700 rounded-lg p-5 text-white row-span-2">=</button>
+		
+			<button class="operator font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">%</button>
+			<button class="number font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">0</button>
+			<button class="decimal font-mono bg-black-100 hover:bg-gray-700 rounded-lg p-5 text-white border border-white">.</button>
+		</div>
+	</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
